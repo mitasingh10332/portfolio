@@ -11,8 +11,8 @@ export function SkillsScene() {
     <SceneSection id="skills" label="Skills" height={2}>
       <div className="mx-auto max-w-5xl">
         <header className="max-w-xl">
-          <p className="eyebrow">Over the mountains</p>
-          <h2 className="mt-4 text-3xl text-foreground sm:text-5xl">What I know</h2>
+          {/* <p className="eyebrow">Over the mountains</p> */}
+          <h2 className="mt-4 text-3xl text-foreground sm:text-5xl">Skills & Technologies</h2>
         </header>
 
         <ul className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

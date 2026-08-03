@@ -14,7 +14,7 @@ export function ProjectsScene() {
       <div className="mx-auto max-w-5xl">
         <header className="max-w-xl">
           {/* <p className="eyebrow">The digital expanse</p> */}
-          <h2 className="mt-4 text-3xl text-foreground sm:text-5xl">What I&rsquo;ve built</h2>
+          <h2 className="mt-4 text-3xl text-foreground sm:text-5xl">Projects</h2>
         </header>
 
         <ul className="mt-14 grid gap-8 md:grid-cols-2">

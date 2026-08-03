@@ -12,7 +12,7 @@ export function AboutScene() {
       <div className="mx-auto max-w-5xl">
         {/* Header — open, no box */}
         <header className="max-w-2xl">
-          <p className="eyebrow">Above the clouds</p>
+          {/* <p className="eyebrow">Above the clouds</p> */}
           <h2 className="mt-4 text-3xl leading-tight text-foreground sm:text-5xl">
             {profile.name}
           </h2>
