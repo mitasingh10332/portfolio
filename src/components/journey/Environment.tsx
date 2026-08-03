@@ -99,7 +99,7 @@ export function Environment() {
         progress={progress}
         range={[0.08, 0.16, 0.28, 0.42]}
         yRange={["6%", "0%", "-3%", "-10%"] as unknown as number[]}
-        opacityRange={[0, 0.95, 0.7, 0]}
+        opacityRange={[0, 0.40, 0.7, 0]}
         pointerFactor={10}
         className="opacity-90"
       />
