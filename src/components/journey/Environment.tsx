@@ -10,17 +10,27 @@ import { Atmosphere } from "./Atmosphere";
 
 type SkyKey = "dawn" | "cloud" | "mountain" | "city" | "digital" | "sunset";
 
-const skies: { key: SkyKey; stops: number[] }[] = [
-  { key: "dawn", stops: [0, 0, 0.14, 0.2] },
-  { key: "cloud", stops: [0.08, 0.18, 0.3, 0.38] },
-  { key: "mountain", stops: [0.28, 0.36, 0.48, 0.56] },
-  { key: "city", stops: [0.46, 0.56, 0.64, 0.72] },
-  { key: "digital", stops: [0.62, 0.72, 0.8, 0.87] },
-  { key: "sunset", stops: [0.78, 0.9, 1, 1] },
+const skies: { key: SkyKey; stops: number[]; opacity: number[] }[] = [
+  { key: "dawn", stops: [0, 0, 0.14, 0.2], opacity: [0, 1, 1, 0] },
+  { key: "cloud", stops: [0.08, 0.18, 0.3, 0.38], opacity: [0, 1, 1, 0] },
+  { key: "mountain", stops: [0.28, 0.36, 0.48, 0.56], opacity: [0, 1, 1, 0] },
+  { key: "city", stops: [0.46, 0.56, 0.64, 0.72], opacity: [0, 1, 1, 0] },
+  { key: "digital", stops: [0.62, 0.72, 0.8, 0.87], opacity: [0, 1, 1, 0] },
+  { key: "sunset", stops: [0.78, 0.9, 1, 1], opacity: [0, 1, 1, 1] },
 ];
 
-function SkyLayer({ sky, stops, progress }: { sky: SkyKey; stops: number[]; progress: MotionValue<number> }) {
-  const opacity = useTransform(progress, stops, [0, 1, 1, 0]);
+function SkyLayer({
+  sky,
+  stops,
+  opacity: opacityRange,
+  progress,
+}: {
+  sky: SkyKey;
+  stops: number[];
+  opacity: number[];
+  progress: MotionValue<number>;
+}) {
+  const opacity = useTransform(progress, stops, opacityRange);
   return (
     <motion.div
       className="absolute inset-0"
@@ -79,7 +89,7 @@ export function Environment() {
   return (
     <div className="fixed inset-0 z-0 overflow-hidden" aria-hidden="true">
       {skies.map((s) => (
-        <SkyLayer key={s.key} sky={s.key} stops={s.stops} progress={progress} />
+        <SkyLayer key={s.key} sky={s.key} stops={s.stops} opacity={s.opacity} progress={progress} />
       ))}
 
       {/* sun / light source */}
