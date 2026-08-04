@@ -9,7 +9,7 @@ export function OpeningScene() {
   const drift = useTransform(progress, [0, 0.12], ["0%", "-8%"]);
 
   return (
-    <SceneSection id="start" label="The journey begins" height={1.4}>
+    <SceneSection id="start" label="The journey begins" height={1.2}>
       <motion.div
         className="mx-auto max-w-3xl text-center"
         style={reducedMotion ? {} : { opacity: fade, y: drift }}

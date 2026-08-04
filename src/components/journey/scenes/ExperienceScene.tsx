@@ -5,7 +5,7 @@ import { SceneSection } from "../SceneSection";
 
 export function ExperienceScene() {
   return (
-    <SceneSection id="experience" label="Experience" height={1.9}>
+    <SceneSection id="experience" label="Experience" height={1.8}>
       <div className="mx-auto max-w-4xl">
         <header className="max-w-xl">
           {/* <p className="eyebrow">Into the city</p> */}
@@ -14,11 +14,11 @@ export function ExperienceScene() {
 
         <div className="mt-12 space-y-8">
           {experience.map((role) => (
-            <InteractiveObject
+            <div
               key={role.company}
               className="glass-panel rounded-xl p-8 sm:p-10"
-              intensity={4}
-              lift={8}
+              // intensity={4}
+              // lift={8}
             >
               <div className="flex flex-wrap items-baseline justify-between gap-3">
                 <div>
@@ -44,7 +44,7 @@ export function ExperienceScene() {
                   </span>
                 ))}
               </div>
-            </InteractiveObject>
+            </div>
           ))}
         </div>
       </div>

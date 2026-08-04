@@ -10,7 +10,7 @@ export function ProjectsScene() {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <SceneSection id="projects" label="Projects" height={2.4}>
+    <SceneSection id="projects" label="Projects" height={2.3}>
       <div className="mx-auto max-w-5xl">
         <header className="max-w-xl">
           {/* <p className="eyebrow">The digital expanse</p> */}

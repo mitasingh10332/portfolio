@@ -8,7 +8,7 @@ export function AboutScene() {
   const { reducedMotion } = useJourney();
 
   return (
-    <SceneSection id="about" label="About" height={2.6}>
+    <SceneSection id="about" label="About" height={2.2}>
       <div className="mx-auto max-w-5xl">
         {/* Header — open, no box */}
         <header className="max-w-2xl">

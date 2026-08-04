@@ -4,7 +4,7 @@ import { SceneSection } from "../SceneSection";
 
 export function ContactScene() {
   return (
-    <SceneSection id="contact" label="Contact" height={1.8}>
+    <SceneSection id="contact" label="Contact" height={1}>
       <div className="mx-auto max-w-3xl text-center">
         {/* <p className="eyebrow">Golden hour</p> */}
         <h2 className="mt-6 text-4xl leading-tight text-foreground sm:text-6xl">

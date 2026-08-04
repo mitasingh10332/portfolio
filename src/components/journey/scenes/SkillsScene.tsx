@@ -8,7 +8,7 @@ export function SkillsScene() {
   const { reducedMotion } = useJourney();
 
   return (
-    <SceneSection id="skills" label="Skills" height={2}>
+    <SceneSection id="skills" label="Skills" height={1.5}>
       <div className="mx-auto max-w-5xl">
         <header className="max-w-xl">
           {/* <p className="eyebrow">Over the mountains</p> */}

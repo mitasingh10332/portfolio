@@ -18,13 +18,13 @@ export function Bird() {
   const pathX = useTransform(
     progress,
     [0, 0.08, 0.18, 0.36, 0.56, 0.76, 1],
-    [42, 30, 34, 62, 30, 66, 46]
+    [33, 40, 44, 62, 30, 66, 50]
   );
 
   const pathY = useTransform(
     progress,
     [0, 0.08, 0.18, 0.36, 0.56, 0.76, 1],
-    [34, 28, 22, 44, 26, 50, 62]
+    [23, 28, 22, 44, 26, 50, 62]
   );
 
   const x = useSpring(pathX, { stiffness: 40, damping: 18, mass: 0.8 });
@@ -69,7 +69,7 @@ export function Bird() {
     <motion.div
       aria-hidden="true"
       className="pointer-events-none fixed z-30"
-      style={{ left, top, rotate: tilt, scale, willChange: "transform" }}
+      style={{ left, top, x: "-50%", rotate: tilt, scale, willChange: "transform" }}
     >
       <div style={{ perspective: 700 }}>
         <BirdSilhouette flapping={flapping && !reducedMotion} size={compact ? 84 : 132} />
