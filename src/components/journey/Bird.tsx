@@ -18,13 +18,13 @@ export function Bird() {
   const pathX = useTransform(
     progress,
     [0, 0.08, 0.18, 0.36, 0.56, 0.76, 1],
-    [33, 40, 44, 62, 30, 66, 50]
+    compact ? [15, 78, 18, 82, 12, 88, 50] : [33, 40, 44, 62, 30, 66, 50]
   );
 
   const pathY = useTransform(
     progress,
     [0, 0.08, 0.18, 0.36, 0.56, 0.76, 1],
-    [23, 28, 22, 44, 26, 50, 62]
+    compact ? [20, 30, 18, 42, 24, 52, 64] : [23, 28, 22, 44, 26, 50, 62]
   );
 
   const x = useSpring(pathX, { stiffness: 40, damping: 18, mass: 0.8 });

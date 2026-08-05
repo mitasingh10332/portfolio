@@ -22,7 +22,7 @@ export function SceneSection({ id, children, height = 1.6, className = "", label
     <section
       id={id}
       aria-label={label}
-      className={`relative flex w-full items-center justify-center px-6 md:px-10 ${className}`}
+      className={`relative flex w-full items-center justify-center px-6 pb-24 pt-16 md:px-10 md:pb-0 md:pt-0 ${className}`}
       style={{ minHeight: `${height * 100}vh` }}
     >
       <motion.div
