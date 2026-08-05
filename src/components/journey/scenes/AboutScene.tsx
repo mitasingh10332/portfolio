@@ -31,7 +31,7 @@ export function AboutScene() {
               key={stat.label}
               initial={reducedMotion ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.4 }}
+              viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.7, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
               className="glass-panel rounded-lg px-5 py-6 text-center"
             >
@@ -49,7 +49,7 @@ export function AboutScene() {
         <motion.section
           initial={reducedMotion ? false : { opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.3 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="glass-panel mt-12 rounded-xl p-7 sm:p-10"
         >
@@ -68,7 +68,7 @@ export function AboutScene() {
           <motion.section
             initial={reducedMotion ? false : { opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
             className="glass-panel rounded-xl p-7 sm:p-8"
           >
@@ -85,7 +85,7 @@ export function AboutScene() {
           <motion.section
             initial={reducedMotion ? false : { opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
+            viewport={{ once: true, amount: 0.15 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
             className="glass-panel rounded-xl p-7 sm:p-8"
           >

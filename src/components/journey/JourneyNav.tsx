@@ -99,7 +99,7 @@ export function JourneyNav() {
       {/* Mobile: compact chapter bar */}
       <nav
         aria-label="Journey chapters"
-        className="fixed bottom-0 left-0 z-40 w-full overflow-x-auto glass-panel px-3 py-2 md:hidden"
+        className="fixed bottom-0 left-0 z-40 w-full overflow-x-auto border-t border-border bg-background px-3 py-2 shadow-[0_-12px_30px_-18px_oklch(0.24_0.03_255/0.45)] md:hidden"
       >
         <ul className="flex min-w-max items-center justify-between gap-2">
           {chapters.slice(1).map((chapter) => (

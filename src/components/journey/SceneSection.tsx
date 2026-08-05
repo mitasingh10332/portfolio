@@ -29,7 +29,7 @@ export function SceneSection({ id, children, height = 1.6, className = "", label
         className="w-full max-w-6xl"
         initial={reducedMotion ? false : { opacity: 0, y: 48, filter: "blur(6px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-        viewport={{ once: false, amount: 0.25, margin: "-10% 0px -10% 0px" }}
+        viewport={{ once: true, amount: 0.15, margin: "0px 0px -5% 0px" }}
         transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
       >
         {children}

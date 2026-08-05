@@ -25,7 +25,7 @@ export function ProjectsScene() {
                 key={project.name}
                 initial={reducedMotion ? false : { opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.15 }}
                 transition={{ duration: 0.9, delay: index * 0.08, ease: [0.22, 1, 0.36, 1] }}
                 className={index % 2 === 1 ? "md:mt-16" : undefined}
               >
